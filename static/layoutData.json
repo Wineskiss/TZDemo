@@ -1,0 +1,580 @@
+{
+  "mainData": [
+    {
+      "x": 0,
+      "y": 0,
+      "w": 100,
+      "h": 1,
+      "i": 1,
+      "index": 1,
+      "style": "background:rgba(0,0,0,0);border-radius:5px;z-index:9",
+      "name": "ZiDingYiDemo",
+      "option": {}
+    },
+    {
+      "x": 0,
+      "y": 1,
+      "w": 25,
+      "h": 4,
+      "i": 2,
+      "index": 0,
+      "style": "background:rgba(0,0,0,0.2);border-radius:5px;z-index:9",
+      "name": "demo1",
+      "option": {
+        "title": {
+          "text": "测试动态加载"
+        },
+        "legend": {
+          "data": [
+            "高度(km)与气温(°C)变化关系"
+          ]
+        },
+        "tooltip": {
+          "trigger": "axis",
+          "formatter": "Temperature : <br/>{b}km : {c}°C"
+        },
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": {
+          "type": "value",
+          "axisLabel": {
+            "formatter": "{value} °C"
+          }
+        },
+        "yAxis": {
+          "type": "category",
+          "axisLine": {
+            "onZero": false
+          },
+          "axisLabel": {
+            "formatter": "{value} km"
+          },
+          "boundaryGap": false,
+          "data": [
+            "0",
+            "10",
+            "20",
+            "30",
+            "40",
+            "50",
+            "60",
+            "70",
+            "80"
+          ]
+        },
+        "series": [
+          {
+            "name": "高度(km)与气温(°C)变化关系",
+            "type": "line",
+            "smooth": true,
+            "lineStyle": {
+              "normal": {
+                "width": 3,
+                "shadowColor": "rgba(0,0,0,0.4)",
+                "shadowBlur": 10,
+                "shadowOffsetY": 10
+              }
+            },
+            "data": [
+              15,
+              -50,
+              -56.5,
+              -46.5,
+              -22.1,
+              -2.5,
+              -27.7,
+              -55.7,
+              -76.5
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "x": 75,
+      "y": 1,
+      "w": 25,
+      "h": 4,
+      "i": 3,
+      "index": 0,
+      "style": "background:rgba(0,0,0,0.2);border-radius:5px;z-index:9",
+      "name": "demo2",
+      "option": {
+        "title": {
+          "text": "测试动态加载"
+        },
+        "legend": {
+          "data": [
+            "高度(km)与气温(°C)变化关系"
+          ]
+        },
+        "xAxis": {
+          "type": "category",
+          "boundaryGap": false
+        },
+        "yAxis": {
+          "type": "value",
+          "boundaryGap": [
+            0,
+            "30%"
+          ]
+        },
+        "visualMap": {
+          "type": "piecewise",
+          "show": false,
+          "dimension": 0,
+          "seriesIndex": 0,
+          "pieces": [
+            {
+              "gt": 1,
+              "lt": 3,
+              "color": "rgba(254, 209, 23, 0.5)"
+            },
+            {
+              "gt": 5,
+              "lt": 7,
+              "color": "rgba(254, 209, 23, 0.5)"
+            }
+          ]
+        },
+        "series": [
+          {
+            "type": "line",
+            "smooth": 0.6,
+            "symbol": "none",
+            "lineStyle": {
+              "color": "#fed117",
+              "width": 5
+            },
+            "markLine": {
+              "symbol": [
+                "none",
+                "none"
+              ],
+              "label": {
+                "show": false
+              },
+              "data": [
+                {
+                  "xAxis": 1
+                },
+                {
+                  "xAxis": 3
+                },
+                {
+                  "xAxis": 5
+                },
+                {
+                  "xAxis": 7
+                }
+              ]
+            },
+            "areaStyle": {},
+            "data": [
+              [
+                "2019-10-10",
+                200
+              ],
+              [
+                "2019-10-11",
+                400
+              ],
+              [
+                "2019-10-12",
+                650
+              ],
+              [
+                "2019-10-13",
+                500
+              ],
+              [
+                "2019-10-14",
+                250
+              ],
+              [
+                "2019-10-15",
+                300
+              ],
+              [
+                "2019-10-16",
+                450
+              ],
+              [
+                "2019-10-17",
+                300
+              ],
+              [
+                "2019-10-18",
+                100
+              ]
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "x": 75,
+      "y": 4,
+      "w": 25,
+      "h": 7,
+      "i": 4,
+      "index": 0,
+      "style": "background:rgba(0,0,0,0.2);border-radius:5px;z-index:9",
+      "name": "demo3",
+      "option": {
+        "title": {
+          "text": "基础雷达图"
+        },
+        "tooltip": {},
+        "legend": {
+          "data": [
+            "预算分配",
+            "实际开销"
+          ]
+        },
+        "radar": {
+          "name": {
+            "textStyle": {
+              "color": "#fff"
+            }
+          },
+          "indicator": [
+            {
+              "name": "销售",
+              "max": 6500
+            },
+            {
+              "name": "管理",
+              "max": 16000
+            },
+            {
+              "name": "信息技术",
+              "max": 30000
+            },
+            {
+              "name": "客服",
+              "max": 38000
+            },
+            {
+              "name": "研发",
+              "max": 52000
+            },
+            {
+              "name": "市场",
+              "max": 25000
+            }
+          ]
+        },
+        "series": [
+          {
+            "name": "预算 vs 开销（Budget vs spending）",
+            "type": "radar",
+            "data": [
+              {
+                "value": [
+                  4300,
+                  10000,
+                  28000,
+                  35000,
+                  50000,
+                  19000
+                ],
+                "name": "预算分配（Allocated Budget）"
+              },
+              {
+                "value": [
+                  5000,
+                  14000,
+                  28000,
+                  31000,
+                  42000,
+                  21000
+                ],
+                "name": "实际开销（Actual Spending）"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "x": 75,
+      "y": 8,
+      "w": 25,
+      "h": 4,
+      "i": 5,
+      "index": 0,
+      "style": "background:rgba(0,0,0,0.2);border-radius:5px;z-index:9",
+      "name": "demo4",
+      "option": {
+        "title": {
+          "text": "世界人口总量",
+          "subtext": "数据来自网络"
+        },
+        "color": [
+          "#3398DB"
+        ],
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "shadow"
+          }
+        },
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": [
+          {
+            "type": "category",
+            "data": [
+              "Mon",
+              "Tue",
+              "Wed",
+              "Thu",
+              "Fri",
+              "Sat",
+              "Sun"
+            ],
+            "axisTick": {
+              "alignWithLabel": true
+            }
+          }
+        ],
+        "yAxis": [
+          {
+            "type": "value"
+          }
+        ],
+        "series": [
+          {
+            "name": "直接访问",
+            "type": "bar",
+            "barWidth": "60%",
+            "data": [
+              10,
+              52,
+              200,
+              334,
+              390,
+              330,
+              220
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "x": 0,
+      "y": 8,
+      "w": 25,
+      "h": 4,
+      "i": 6,
+      "index": 0,
+      "style": "background:rgba(0,0,0,0.2);border-radius:5px;z-index:9",
+      "name": "demo6",
+      "option": {
+        "title": {
+          "text": "世界人口总量",
+          "subtext": "数据来自网络"
+        },
+        "tooltip": {
+          "trigger": "axis",
+          "axisPointer": {
+            "type": "shadow"
+          }
+        },
+        "legend": {
+          "data": [
+            "2011年",
+            "2012年"
+          ]
+        },
+        "grid": {
+          "left": "3%",
+          "right": "4%",
+          "bottom": "3%",
+          "containLabel": true
+        },
+        "xAxis": {
+          "type": "value",
+          "boundaryGap": [
+            0,
+            0.01
+          ]
+        },
+        "yAxis": {
+          "type": "category",
+          "data": [
+            "巴西",
+            "印尼",
+            "美国",
+            "印度",
+            "中国",
+            "世界人口(万)"
+          ]
+        },
+        "series": [
+          {
+            "name": "2011年",
+            "type": "bar",
+            "data": [
+              18203,
+              23489,
+              29034,
+              104970,
+              131744,
+              630230
+            ]
+          },
+          {
+            "name": "2012年",
+            "type": "bar",
+            "data": [
+              19325,
+              23438,
+              31000,
+              121594,
+              134141,
+              681807
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "x": 0,
+      "y": 4,
+      "w": 25,
+      "h": 7,
+      "i": 7,
+      "index": 0,
+      "style": "background:rgba(0,0,0,0.2);border-radius:5px;z-index:9",
+      "name": "demo7",
+      "option": {
+        "title": {
+          "text": "漏斗图",
+          "subtext": "纯属虚构"
+        },
+        "tooltip": {
+          "trigger": "item",
+          "formatter": "{a} <br/>{b} : {c}%"
+        },
+        "toolbox": {
+          "feature": {
+            "dataView": {
+              "readOnly": false
+            },
+            "restore": {},
+            "saveAsImage": {}
+          }
+        },
+        "legend": {
+          "data": [
+            "展现",
+            "点击",
+            "访问",
+            "咨询",
+            "订单"
+          ]
+        },
+        "series": [
+          {
+            "name": "预期",
+            "type": "funnel",
+            "left": "10%",
+            "width": "80%",
+            "label": {
+              "formatter": "{b}预期"
+            },
+            "labelLine": {
+              "show": false
+            },
+            "itemStyle": {
+              "opacity": 0.7
+            },
+            "emphasis": {
+              "label": {
+                "position": "inside",
+                "formatter": "{b}预期: {c}%"
+              }
+            },
+            "data": [
+              {
+                "value": 60,
+                "name": "访问"
+              },
+              {
+                "value": 40,
+                "name": "咨询"
+              },
+              {
+                "value": 20,
+                "name": "订单"
+              },
+              {
+                "value": 80,
+                "name": "点击"
+              },
+              {
+                "value": 100,
+                "name": "展现"
+              }
+            ]
+          },
+          {
+            "name": "实际",
+            "type": "funnel",
+            "left": "10%",
+            "width": "80%",
+            "maxSize": "80%",
+            "label": {
+              "position": "inside",
+              "formatter": "{c}%",
+              "color": "#fff"
+            },
+            "itemStyle": {
+              "opacity": 0.5,
+              "borderColor": "#fff",
+              "borderWidth": 2
+            },
+            "emphasis": {
+              "label": {
+                "position": "inside",
+                "formatter": "{b}实际: {c}%"
+              }
+            },
+            "data": [
+              {
+                "value": 30,
+                "name": "访问"
+              },
+              {
+                "value": 10,
+                "name": "咨询"
+              },
+              {
+                "value": 5,
+                "name": "订单"
+              },
+              {
+                "value": 50,
+                "name": "点击"
+              },
+              {
+                "value": 80,
+                "name": "展现"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
